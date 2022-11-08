@@ -1,0 +1,31 @@
+@mixin background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.home-icon {
+  background-image: url('@/assets/images/home.png');
+  @include background;
+}
+
+.x-cancel-icon {
+  background-image: url('@/assets/images/cross.png');
+  filter: contrast(0.4);
+  @include background;
+}
+
+.arrow-small-icon {
+  background-image: url('@/assets/images/arrow-small-left.png');
+  @include background;
+}
+
+.angle-small-icon {
+  background-image: url('@/assets/images/angle-small-right.png');
+  @include background;
+}
+
+.no-data-found-image {
+  background-image: url('@/assets/images/no-data-found.jpeg');
+  @include background;
+}
